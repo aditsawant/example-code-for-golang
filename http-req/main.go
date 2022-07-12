@@ -28,7 +28,7 @@ func getCType(url string) (string, error) {
 
 	ctype := resp.Header.Get("Content-Type")
 	if ctype == "" {
-		return "", fmt.Errorf("Can't find Content-Type in the Header")
+		return "", fmt.Errorf("can't find content-type in the header")
 	}
 
 	return ctype, nil
