@@ -12,7 +12,15 @@ func main() {
 	fmt.Println("FizzBuzz Problem")
 
 	n := getInput()
+	getFizzBuzz(n)
 
+	fmt.Println("FizzBuzz for 1 to 20")
+	for i := 1; i <= 20; i++ {
+		getFizzBuzz(i)
+	}
+}
+
+func getFizzBuzz(n int) {
 	if n%5 == 0 && n%3 == 0 {
 		fmt.Println("fizz buzz")
 	} else if n%3 == 0 {
